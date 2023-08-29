@@ -86,7 +86,7 @@ function App() {
                 sx={{
                   borderBottom: 1,
                   borderColor: 'divider',
-                  color: 'orange',
+                  color: 'white',
                 }}
               >
                 <IconButton
@@ -107,12 +107,12 @@ function App() {
           </Grid>
           <Grid
             container
-            pt={10}
+            pt={18}
             columnGap={3}
-            paddingTop={15}
             alignItems={'center'}
             justifyContent={' space-around'}
             width={'100%'}
+            paddingBottom={8}
           >
             <Grid item>
               <TextField
@@ -152,7 +152,7 @@ function App() {
             <Grid item pb={3}>
               <Button
                 variant="contained"
-                style={{ backgroundColor: 'green', color: 'orange' }}
+                style={{ backgroundColor: 'green', color: 'white' }}
                 size="large"
                 fullWidth="true"
               >
