@@ -13,6 +13,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
 import Toolbar from '@mui/material/Toolbar';
+import Checkbox from '@mui/material/Checkbox';
 
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
@@ -25,6 +26,8 @@ import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { orange } from '@mui/material/colors';
+import { colors } from '@mui/material';
 
 const bull = (
   <Box
@@ -78,8 +81,14 @@ function App() {
       <Container maxWidth="lg">
         <Grid container rowSpacing={8}>
           <Grid item xs={12}>
-            <AppBar>
-              <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
+            <AppBar style={{ backgroundColor: 'green' }}>
+              <Toolbar
+                sx={{
+                  borderBottom: 1,
+                  borderColor: 'divider',
+                  color: 'orange',
+                }}
+              >
                 <IconButton
                   size="large"
                   edge="start"
@@ -96,14 +105,23 @@ function App() {
               </Toolbar>
             </AppBar>
           </Grid>
-          <Grid container pt={10} columnGap={3} paddingTop={15}>
+          <Grid
+            container
+            pt={10}
+            columnGap={3}
+            paddingTop={15}
+            alignItems={'center'}
+          >
             <Grid item xs="auto">
               <TextField
-                helperText="Please enter your name"
+                helperText="Please name"
                 id="demo-helper-text-aligned"
                 label="Name"
+                backgroundColor="green"
+                style={{ borderColor: 'orange' }}
               />
             </Grid>
+
             <Grid>
               <TextField
                 helperText="Please enter your name"
@@ -111,6 +129,10 @@ function App() {
                 label="Name"
               />
             </Grid>
+            {/*     <Grid>
+              <Checkbox size="large" label="Round Trip?"></Checkbox>
+            </Grid> */}
+
             <Grid>
               <TextField
                 helperText="Please enter your name"
@@ -126,11 +148,13 @@ function App() {
               />
             </Grid>
             <Grid item xs={12} pb={3}>
-              {/* <Stack spacing={3}> */}
-
-              <Button variant="contained">Search</Button>
-
-              {/* </Stack> */}
+              <Button
+                variant="contained"
+                style={{ backgroundColor: 'green', color: 'orange' }}
+                size="large"
+              >
+                Search
+              </Button>
             </Grid>
           </Grid>
         </Grid>
