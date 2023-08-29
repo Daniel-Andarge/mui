@@ -111,8 +111,10 @@ function App() {
             columnGap={3}
             paddingTop={15}
             alignItems={'center'}
+            justifyContent={' space-around'}
+            width={'100%'}
           >
-            <Grid item xs="auto">
+            <Grid item>
               <TextField
                 helperText="Please name"
                 id="demo-helper-text-aligned"
@@ -129,8 +131,8 @@ function App() {
                 label="Name"
               />
             </Grid>
-            {/*     <Grid>
-              <Checkbox size="large" label="Round Trip?"></Checkbox>
+            {/*  <Grid>
+              <Checkbox size="large" />
             </Grid> */}
 
             <Grid>
@@ -147,11 +149,12 @@ function App() {
                 label="Name"
               />
             </Grid>
-            <Grid item xs={12} pb={3}>
+            <Grid item pb={3}>
               <Button
                 variant="contained"
                 style={{ backgroundColor: 'green', color: 'orange' }}
                 size="large"
+                fullWidth="true"
               >
                 Search
               </Button>
