@@ -81,7 +81,7 @@ function App() {
       <Container maxWidth="lg">
         <Grid container rowSpacing={8}>
           <Grid item xs={12}>
-            <AppBar style={{ backgroundColor: 'green' }}>
+            <AppBar style={{ backgroundColor: '#0253a4' }}>
               <Toolbar
                 sx={{
                   borderBottom: 1,
@@ -152,7 +152,7 @@ function App() {
             <Grid item pb={3}>
               <Button
                 variant="contained"
-                style={{ backgroundColor: 'green', color: 'white' }}
+                style={{ backgroundColor: '#0253a4', color: 'white' }}
                 size="large"
                 fullWidth="true"
               >
